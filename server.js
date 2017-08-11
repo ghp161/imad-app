@@ -9,12 +9,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleOne));
+app.get('/:articleName', function (req, res) {
+    var articlename = req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
   //res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
-var articles{
+var articles = {
     'article-one': {
         title: 'Article One : Hari Prasad',
         header: 'Article One',
@@ -28,7 +29,7 @@ var articles{
                     <p>
                         This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
                     </p>`
-    };
+    },
     
     'article-two': {
         title: 'Article Two : Hari Prasad',
@@ -43,7 +44,7 @@ var articles{
                     <p>
                         This is the content for my second article during building web apps course learning through IMAD..   This is the content for my second article during building web apps course learning through IMAD..  
                     </p>`
-    };
+    },
     
     'article-three': {
         title: 'Article Three : Hari Prasad',
@@ -91,6 +92,10 @@ function createTemplate(data){
     return htmlTemplate;
 };
 
+app.get('/article-one', function (req, res) {
+  res.send(createTemplate(articleOne));
+  //res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+});
 
 app.get('/article-two', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));

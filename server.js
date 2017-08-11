@@ -59,7 +59,7 @@ var articles = {
                     <p>
                         This is the content for my third article during building web apps course learning through IMAD..   This is the content for my third article during building web apps course learning through IMAD..   
                     </p>`
-    };
+    }
 };
 
 

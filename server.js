@@ -10,8 +10,54 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createTemplate(articleOne));
+  //res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
+
+var articleOne={
+    title:"Article One : Hari Prasad",
+    header:"Article One",
+    date:"11 August 2017",
+    content:`<p>
+                    This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
+                </p>
+                <p>
+                    This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
+                </p>
+                <p>
+                    This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
+                </p>`
+};
+
+function createTemplate(data){
+    var title = data.title;
+    var header = data.header;
+    var date = data.date;
+    var content = data.content;
+    
+    var htmlTemplate=`<html>
+        <head>
+            <title>${title}</title>
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+           <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+        <body>
+            <div class="container">
+                <div><a href="/">Home</a></div>
+                <hr>
+                <h3>${header}</h3>
+                <div>${date}</div>
+            
+                <div>
+                   ${content}
+                </div>
+            </div>
+        </body>
+    </html>`;    
+    
+    return htmlTemplate;
+}
+
 
 app.get('/article-two', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));

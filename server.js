@@ -14,20 +14,53 @@ app.get('/article-one', function (req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
-var articleOne={
-    title:"Article One : Hari Prasad",
-    header:"Article One",
-    date:"11 August 2017",
-    content:`<p>
-                    This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
-                </p>
-                <p>
-                    This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
-                </p>
-                <p>
-                    This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
-                </p>`
+var articles{
+    'article-one': {
+        title: 'Article One : Hari Prasad',
+        header: 'Article One',
+        date: '11 August 2017',
+        content:`<p>
+                        This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
+                    </p>
+                    <p>
+                        This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
+                    </p>
+                    <p>
+                        This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
+                    </p>`
+    };
+    
+    'article-two': {
+        title: 'Article Two : Hari Prasad',
+        header: 'Article Two',
+        date: '15 August 2017',
+        content:`<p>
+                        This is the content for my second article during building web apps course learning through IMAD..   This is the content for my second article during building web apps course learning through IMAD..  
+                    </p>
+                    <p>
+                        This is the content for my second article during building web apps course learning through IMAD..   This is the content for my second article during building web apps course learning through IMAD..  
+                    </p>
+                    <p>
+                        This is the content for my second article during building web apps course learning through IMAD..   This is the content for my second article during building web apps course learning through IMAD..  
+                    </p>`
+    };
+    
+    'article-three': {
+        title: 'Article Three : Hari Prasad',
+        header: 'Article Three',
+        date: '11 August 2017',
+        content:`<p>
+                       This is the content for my third article during building web apps course learning through IMAD..   This is the content for my third article during building web apps course learning through IMAD..   
+                    </p>
+                    <p>
+                        This is the content for my third article during building web apps course learning through IMAD..   This is the content for my third article during building web apps course learning through IMAD..   
+                    </p>
+                    <p>
+                        This is the content for my third article during building web apps course learning through IMAD..   This is the content for my third article during building web apps course learning through IMAD..   
+                    </p>`
+    };
 };
+
 
 function createTemplate(data){
     var title = data.title;
@@ -56,7 +89,7 @@ function createTemplate(data){
     </html>`;    
     
     return htmlTemplate;
-}
+};
 
 
 app.get('/article-two', function (req, res) {

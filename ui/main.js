@@ -27,9 +27,11 @@ batn.onclick = function () {
     req.onreadystatechange = function (){
       if (req.readystate  == XMLHttpRequest.DONE){
           if (req.status == 200)
+          {
             var counter = req.responseText;
             var eles = document.getElementById("cnt");
             eles.innerHTML = counter;
+          }
       }
     };
     

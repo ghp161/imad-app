@@ -93,8 +93,8 @@ function createTemplate(data){
                 </div>
             </div>
             <hr>
-            <input type"text" id="comments" placeholder="enter comments"></input>
-            <input type"submit" id="submit_com" value="Submit"></input>
+            <input type="text" id="comments" placeholder="enter comments"></input>
+            <input type="submit" id="submit_com" value="Submit"></input>
             <ul id="comlist"></ul>
         </body>
     </html>`;    

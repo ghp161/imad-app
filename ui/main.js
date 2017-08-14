@@ -45,7 +45,7 @@ batn.onclick = function () {
 var submnt = document.getElementById("submit_com");
 submnt.onclick = function () {
     // create request object
-    alert("hi");
+    console.log("submit called");
     var req = new XMLHttpRequest();
     req.onreadystatechange = function (){
       if (req.readyState  === XMLHttpRequest.DONE){
@@ -67,7 +67,7 @@ submnt.onclick = function () {
     
     var nameEle = document.getElementById("comments");
     var name = nameEle.value;
-    
+    console.log(name);
     // make request
     req.open("GET","http://ghp161.imad.hasura-app.io/submit-com?name=" + name,true);
     req.send(null);

@@ -40,3 +40,33 @@ batn.onclick = function () {
     req.open("GET","http://ghp161.imad.hasura-app.io/counter",true);
     req.send(null);
 };
+
+
+var counter = 0;
+var submnt = document.getElementById("submit_com");
+submnt.onclick = function () {
+    // create request object
+    var req = new XMLHttpRequest();
+    req.onreadystatechange = function (){
+      if (req.readyState  === XMLHttpRequest.DONE){
+          if (req.status === 200)
+          {
+            var names = req.responseText;
+            var list = "";
+            for(var i=0; i < names.length; i++){
+                list += "<li>" + names[i] + "</li>"
+            }
+            var eles = document.getElementById("comlist");
+            eles.innerHTML = list;
+          }
+          else
+            console.log(req.status);
+      }
+    };
+    
+    var name = document.getElementById("comments").value;
+    
+    // make request
+    req.open("GET","http://ghp161.imad.hasura-app.io/submit-com?name=" + name,true);
+    req.send(null);
+};

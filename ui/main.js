@@ -42,7 +42,6 @@ batn.onclick = function () {
 };
 
 
-var counter = 0;
 var submnt = document.getElementById("submit_com");
 submnt.onclick = function () {
     // create request object
@@ -52,6 +51,7 @@ submnt.onclick = function () {
           if (req.status === 200)
           {
             var names = req.responseText;
+            names = JSON.parse(names);
             var list = "";
             for(var i=0; i < names.length; i++){
                 list += "<li>" + names[i] + "</li>"

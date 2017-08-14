@@ -33,7 +33,7 @@ var articles = {
         title: 'Article One : Hari Prasad',
         header: 'Article One',
         date: '11 August 2017',
-        content:`<p>
+        content:`<form id="art" method="Post"><p>
                         This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
                     </p>
                     <p>
@@ -45,7 +45,7 @@ var articles = {
                     <hr>
             <input type="text" id="comments" placeholder="enter comments"></input>
             <input type="submit" id="submit_com" value="Submit"></input>
-            <ul id="comlist"></ul>`
+            <ul id="comlist"></ul></form>`
     },
     
     'article-two': {

@@ -17,3 +17,13 @@ img.onclick = function () {
     var interval = setInterval(moveRight, 50);
   //img.style.marginLeft = "100px";  
 };
+
+var counter = 0;
+var batn = document.getElementById("counter");
+batn.onclick = function () {
+  
+  var eles = document.getElementById("cnt");
+  counter = counter + 1;
+  eles.innerHTML = counter;
+    
+};

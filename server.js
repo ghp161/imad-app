@@ -48,7 +48,7 @@ var articles = {
             <input type="submit" id="submit_com" value="Submit"></input>
             <ul id="comlist">
             <li>har</li>
-            </ul></form>`
+            </ul>
     },
     
     'article-two': {

@@ -41,7 +41,11 @@ var articles = {
                     </p>
                     <p>
                         This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
-                    </p>`
+                    </p>
+                    <hr>
+            <input type="text" id="comments" placeholder="enter comments"></input>
+            <input type="submit" id="submit_com" value="Submit"></input>
+            <ul id="comlist"></ul>`
     },
     
     'article-two': {
@@ -99,10 +103,7 @@ function createTemplate(data){
                    ${content}
                 </div>
             </div>
-            <hr>
-            <input type="text" id="comments" placeholder="enter comments"></input>
-            <input type="submit" id="submit_com" value="Submit"></input>
-            <ul id="comlist"></ul>
+            
         </body>
     </html>`;    
     

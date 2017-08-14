@@ -5,7 +5,7 @@ console.log('Loaded!');
 //element.innerHTML = "Hari Prasad";
 
 //move image on click
-var img = document.getElementById("madi");
+/*var img = document.getElementById("madi");
 var marginLeft = 0;
 function moveRight()
 {
@@ -15,7 +15,7 @@ function moveRight()
 img.onclick = function () {
     var interval = setInterval(moveRight, 50);
   //img.style.marginLeft = "100px";  
-};
+};*/
 
 var counter = 0;
 var batn = document.getElementById("counter");

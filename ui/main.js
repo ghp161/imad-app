@@ -37,5 +37,5 @@ batn.onclick = function () {
     
     // make request
     req.open("GET","http://ghp161.imad.hasura-app.io/counter",true);
-    req.send();
+    req.send(null);
 };

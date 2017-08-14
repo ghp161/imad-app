@@ -45,7 +45,9 @@ var articles = {
                     <hr>
             <input type="text" id="comments" placeholder="enter comments"></input>
             <input type="submit" id="submit_com" value="Submit"></input>
-            <ul id="comlist"></ul></form>`
+            <ul id="comlist">
+            <li>har</li>
+            </ul></form>`
     },
     
     'article-two': {

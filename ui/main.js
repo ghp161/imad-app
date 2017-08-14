@@ -26,7 +26,7 @@ batn.onclick = function () {
     console.log('Loaded!');
     req.onreadystatechange = function (){
         console.log(req.readystate);
-      if (req.readystate  === XMLHttpRequest.DONE){
+      if (req.readyState  === XMLHttpRequest.DONE){
           if (req.status === 200)
           {
             var counter = req.responseText;

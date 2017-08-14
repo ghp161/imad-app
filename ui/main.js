@@ -25,7 +25,6 @@ batn.onclick = function () {
     var req = new XMLHttpRequest();
     console.log('Loaded!');
     req.onreadystatechange = function (){
-        console.log(req.readystate);
       if (req.readyState  === XMLHttpRequest.DONE){
           if (req.status === 200)
           {
@@ -34,7 +33,7 @@ batn.onclick = function () {
             eles.innerHTML = counter;
           }
           else
-          console.log(req.status);
+            console.log(req.status);
       }
     };
     

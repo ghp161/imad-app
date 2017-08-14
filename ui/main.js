@@ -15,7 +15,7 @@ function moveRight()
 img.onclick = function () {
     var interval = setInterval(moveRight, 50);
   //img.style.marginLeft = "100px";  
-};*/
+};
 
 var counter = 0;
 var batn = document.getElementById("counter");
@@ -38,7 +38,7 @@ batn.onclick = function () {
     // make request
     req.open("GET","http://ghp161.imad.hasura-app.io/counter",true);
     req.send(null);
-};
+};*/
 
 
 var submnt = document.getElementById("submit_com");

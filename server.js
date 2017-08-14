@@ -33,7 +33,7 @@ var articles = {
         title: 'Article One : Hari Prasad',
         header: 'Article One',
         date: '11 August 2017',
-        content:`<form id="art" method="Post"><p>
+        content:`<form id="art"><p>
                         This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
                     </p>
                     <p>

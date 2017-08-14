@@ -98,7 +98,6 @@ function createTemplate(data){
         </script>
         </head>
         <body>
-        <form id="art">
             <div class="container">
                 <div><a href="/">Home</a></div>
                 <hr>
@@ -109,7 +108,6 @@ function createTemplate(data){
                    ${content}
                 </div>
             </div>
-            </form>
         </body>
     </html>`;    
     

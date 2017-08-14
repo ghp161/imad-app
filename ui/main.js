@@ -25,8 +25,8 @@ batn.onclick = function () {
     var req = new XMLHttpRequest();
     
     req.onreadystatechange = function (){
-      if (req.readystate  == XMLHttpRequest.DONE){
-          if (req.status == 200)
+      if (req.readystate  === XMLHttpRequest.DONE){
+          if (req.status === 200)
           {
             var counter = req.responseText;
             var eles = document.getElementById("cnt");

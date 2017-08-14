@@ -21,9 +21,19 @@ img.onclick = function () {
 var counter = 0;
 var batn = document.getElementById("counter");
 batn.onclick = function () {
-  
-  var eles = document.getElementById("cnt");
-  counter = counter + 1;
-  eles.innerHTML = counter;
+    // create request object
+    var req = new XMLHttpRequest();
     
+    req.onreadystatechange = function (){
+      if (req.readystate  == XMLHttpRequest.DONE){
+          if (req.status == 200)
+            var counter = req.responseText;
+            var eles = document.getElementById("cnt");
+            eles.innerHTML = counter;
+      }
+    };
+    
+    // make request
+    req.open("GET","http://ghp161.imad.hasura-app.io/counter",true);
+    req.send();
 };

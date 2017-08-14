@@ -45,6 +45,7 @@ batn.onclick = function () {
 var submnt = document.getElementById("submit_com");
 submnt.onclick = function () {
     // create request object
+    alert("hi");
     var req = new XMLHttpRequest();
     req.onreadystatechange = function (){
       if (req.readyState  === XMLHttpRequest.DONE){

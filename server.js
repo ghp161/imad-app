@@ -33,7 +33,7 @@ var articles = {
         title: 'Article One : Hari Prasad',
         header: 'Article One',
         date: '11 August 2017',
-        content:`<form id="art"><p>
+        content:`<p>
                         This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
                     </p>
                     <p>
@@ -93,6 +93,7 @@ function createTemplate(data){
            <link href="/ui/style.css" rel="stylesheet" />
         </head>
         <body>
+        <form id="art">
             <div class="container">
                 <div><a href="/">Home</a></div>
                 <hr>
@@ -103,7 +104,7 @@ function createTemplate(data){
                    ${content}
                 </div>
             </div>
-            
+            </form>
         </body>
     </html>`;    
     

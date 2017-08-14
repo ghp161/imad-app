@@ -23,7 +23,6 @@ var batn = document.getElementById("counter");
 batn.onclick = function () {
     // create request object
     var req = new XMLHttpRequest();
-    console.log('Loaded!');
     req.onreadystatechange = function (){
       if (req.readyState  === XMLHttpRequest.DONE){
           if (req.status === 200)

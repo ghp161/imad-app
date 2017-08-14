@@ -43,6 +43,7 @@ var articles = {
                         This is the content for my first article during building web apps course learning through IMAD.. This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  This is the content for my first article during building web apps course learning through IMAD..  
                     </p>
                     <hr>
+                    This button clicked.. <button id="counter">Click Me</button> <span id="cnt">0</span> times..
             <input type="text" id="comments" placeholder="enter comments"></input>
             <input type="submit" id="submit_com" value="Submit"></input>
             <ul id="comlist">

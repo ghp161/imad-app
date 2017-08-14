@@ -65,7 +65,8 @@ submnt.onclick = function () {
       }
     };
     
-    var name = document.getElementById("comments").value;
+    var nameEle = document.getElementById("comments");
+    var name = nameEle.value;
     
     // make request
     req.open("GET","http://ghp161.imad.hasura-app.io/submit-com?name=" + name,true);

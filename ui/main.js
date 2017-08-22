@@ -41,7 +41,7 @@ batn.onclick = function () {
 };
 
 
-var submnt = document.getElementById("submit_com");
+/*var submnt = document.getElementById("submit_com");
 submnt.onclick = function () {
     // create request object
     console.log("submit called");
@@ -71,3 +71,4 @@ submnt.onclick = function () {
     req.open("GET","http://ghp161.imad.hasura-app.io/submit-com?name=" + name,true);
     req.send(null);
 };
+*/

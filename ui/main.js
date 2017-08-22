@@ -1,11 +1,11 @@
 console.log('Loaded!');
 
-//change text of using javascript
-//var element = document.getElementById("main-text");
-//element.innerHTML = "Hari Prasad";
+change text of using javascript
+var element = document.getElementById("main-text");
+element.innerHTML = "Hari Prasad";
 
 //move image on click
-/*var img = document.getElementById("madi");
+var img = document.getElementById("madi");
 var marginLeft = 0;
 function moveRight()
 {
@@ -38,7 +38,7 @@ batn.onclick = function () {
     // make request
     req.open("GET","http://ghp161.imad.hasura-app.io/counter",true);
     req.send(null);
-};*/
+};
 
 
 var submnt = document.getElementById("submit_com");
